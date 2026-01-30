@@ -19,14 +19,25 @@
     @apply flex justify-between gap-5 items-center
 }
 .card{
-    @apply  bg-white rounded-2xl shadow-gray-500 shadow-xl relative overflow-hidden
+    @apply  bg-white rounded-2xl shadow-gray-500 shadow-xl relative overflow-hidden m-4 border-4 border-gray-200
 }
 .fav{
     @apply w-8 absolute top-4 right-4
 }
 .card-img{
-    @apply object-cover h-[40vh]
+    @apply object-cover h-[30vh] w-[12vw]
 }
 .search-bar{
     @apply flex justify-between items-center bg-white p-4 rounded-full m-2
+}
+
+.tag{
+    @apply bg-white p-2 rounded-full m-1
+}
+
+.card-text{
+    @apply p-4 w-full font-bold uppercase flex justify-between items-center flex-col text-left
+}
+.comprar-button{
+    @apply bg-green-900 text-white p-2 rounded-full m-auto text-center 
 }
