@@ -6,7 +6,7 @@
 	<title>Santa Ana Atelier</title>
 	<link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-slate-400">
+<body class="bg-zinc-800">
 	<header>
 		<nav class="nav">
 			<div id="logo" class="logo">
@@ -15,10 +15,10 @@
 				</a>
 			</div>
 			<div id="options" class="nav-options">
-				<a href="rosarios.html" aria-label="ver el catálogo de novedades" title="Ver novedades">Nuevo</a>
-				<a href="rosarios.html" aria-label="ver el catálogo de rosarios" title="Ver rosarios">Rosarios</a>
-				<a href="rosarios.html" aria-label="ver el catálogo de pulseras" title="Ver pulseras">Pulseras</a>
-				<a href="rosarios.html" aria-label="ver el catálogo de escapularios" title="Ver escapularios">Escapularios</a>
+				<a href="./src/rosarios.html" aria-label="ver el catálogo de novedades" title="Ver novedades">Nuevo</a>
+				<a href="./src/rosarios.html" aria-label="ver el catálogo de rosarios" title="Ver rosarios">Rosarios</a>
+				<a href="./src/rosarios.html" aria-label="ver el catálogo de pulseras" title="Ver pulseras">Pulseras</a>
+				<a href="./src/rosarios.html" aria-label="ver el catálogo de escapularios" title="Ver escapularios">Escapularios</a>
 			</div>
 			<div id="log" class="log">
 				<img src="src/imagenes/buscar.png" class="icon" alt="Icono para buscar">
@@ -31,33 +31,33 @@
 			</div>
 		</nav>
 	</header>
-	<main>
-		<section class="w-full">
-			<img id="banner" src="src/imagenes/BannerRosario.jpg" alt="Banner de presentación Santa Ana Atelier" class="">
+	<main class="w-full">
+		<section class="w-full bg-zinc-800 p-5">
+			<img id="banner" src="src/imagenes/BannerRosario.jpg" alt="Banner de presentación Santa Ana Atelier" class="w-full object-cover h-screen rounded-2xl shadow-sky-300 shadow-2xl border-sky-300 border-4 inset-shadow-sky-300">
 		</section>
-		<section>
-			<a href="rosarios.html">
-				<article>
-				<div class=""><h1 id="metal">Rosarios de metal</h1></div>
-					<img src="src/imagenes/Rosario01.jpg" alt="Rosarios de metal">
+		<section class="flex justify-around p-10">
+			<a href="./src/rosarios.html">
+				<article class="relative">
+				<div class="absolute bottom-6 text-5xl font-extrabold m-4 uppercase"><h1 id="metal">Rosarios de metal</h1></div>
+					<img src="src/imagenes/Rosario01.jpg" alt="Rosarios de metal" class="rounded-2xl object-cover h-[80vh] border-4 border-amber-100 shadow-2xl shadow-amber-100 uppercase">
 				</article>
 			</a>
-			<a href="rosarios.html">
-				<article>
-				<div class=""><h1 id="piedra">Rosarios de piedra</h1></div>
-					<img src="src/imagenes/Rosario02.jpg" alt="Rosarios de piedra">
+			<a href="./src/rosarios.html">
+				<article class="relative">
+				<div class="absolute bottom-6 text-5xl font-extrabold pr-4 pb-4 text-right w-full uppercase"><h1 id="piedra">Rosarios de piedra</h1></div>
+					<img src="src/imagenes/Rosario02.jpg" alt="Rosarios de piedra" class="rounded-2xl object-cover h-[80vh] border-4 border-slate-300 shadow-2xl shadow-slate-300 uppercase">
 				</article>
 			</a>
 		</section>
-		<section>
+		<section class="relative p-6 w-full">
 				<div class=""></div>
 				<div class=""></div>
-				<div class=""><h1>Descubre nuestros collares de rosario</h1></div>
-				<img src="https://picsum.photos/1980/1000" alt="Sección de collares">
+				<div class="absolute bottom-6 text-3xl font-extrabold p-4  text-right uppercase"><h1>Descubre nuestros collares de rosario</h1></div>
+				<img src="https://picsum.photos/1980/1000" alt="Sección de collares" class=" rounded-2xl shadow-2xl shadow-black">
 		</section>
 	</main>
 	<footer>
-		<div id="información">
+		<div id="información" class="flex w-full justify-around p-8 bg-zinc-500">
 			<div>
 				<h3>Ayuda</h3>
 				<ul>
@@ -95,7 +95,7 @@
 				</ul>
 			</div>
 		</div>
-		<div id="marca">
+		<div id="marca" class="flex text-white font-extrabold gap-4 p-6">
 			<h1>Santa Ana Atelier</h1>
 			<p>Marca registrada</p>
 		</div>
