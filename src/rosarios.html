@@ -6,8 +6,8 @@
 	<title>Santa Ana Atelier</title>
 	<link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-zinc-800">
-	<header>
+<body class="w-screen  md:block bg-zinc-800 grid grid-cols-1 ">
+	<header class="w-full">
 		<nav aria-label="Navegación principal" class="nav">
 			<div id="logo"class="logo">
 				<a href="../index.html" aria-label="Ir a la página principal" accesskey="1" tabindex="0">
@@ -31,172 +31,172 @@
 			</div>
 		</nav>
 	</header>
-	<div class="flex">
-	<main class="order-2">
-        <div class="search-bar" role="search" aria-label="Resultados de búsqueda">
-			<p aria-live="polite">Resultados:</p>
-			<div class="flex justify-between items-center gap-2">
-				<label for="buscar">Buscar</label>
-				<input class="bg-zinc-200 rounded-full p-2" id="buscar" type="text" placeholder="Buscar..." aria-label="Cuadro de búsqueda" accesskey="b" tabindex="0">
-				<img src="imagenes/buscar.png" class="icon" alt="Buscar" role="button" tabindex="0" aria-label="Ejecutar búsqueda">
+	<div class="w-screen flex flex-col md:flex-row">
+		<main class="w-full order-2">
+			<div class="search-bar" role="search" aria-label="Resultados de búsqueda">
+				<p aria-live="polite" class="hidden md:block">Resultados:</p>
+				<div class="flex justify-between items-center gap-2">
+					<label for="buscar" class="hidden md:block">Buscar</label>
+					<input class="bg-zinc-200 rounded-full p-2" id="buscar" type="text" placeholder="Buscar..." aria-label="Cuadro de búsqueda" accesskey="b" tabindex="0">
+					<img src="imagenes/buscar.png" class="icon" alt="Buscar" role="button" tabindex="0" aria-label="Ejecutar búsqueda">
+				</div>
 			</div>
-        </div>
-		<section id="rosarios" aria-label="Listado de rosarios" class="flex justify-around items-center flex-wrap bg-white/80 rounded-2xl p-8 gap-4 m-2">
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
+			<section id="rosarios" aria-label="Listado de rosarios" class=" order-2 grid grid-cols-2 md:flex md:justify-around md:items-center md:flex-wrap bg-white/80 rounded-2xl p-4 md:p-8 gap-2 m-2">
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
 
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-			<article tabindex="0" class="card">
-				<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
-				<a href="detalles.html" aria-label="Ver detalles del rosario">
-					<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
-					<div class="card-text">
-						<h4 class="text-left">Rosario</h4>
-						<p>13,13 €</p>
-						<button class="comprar-button">Comprar</button>
-					</div>
-				</a>
-			</article>
-		</section>
-	</main>
-	<aside aria-label="Filtros de productos" class="order-1 bg-white/80 rounded-2xl m-2 p-8">
-		<div class=" flex gap-2">
-            <img class="icon" id="iconoFiltros" src="imagenes/filters.png" alt="Icono de filtros">
-            Filtros
-        </div>
-		<div class="flex flex-wrap" aria-label="Opciones de filtro" >
-			<a aria-label="Filtrar por madera" tabindex="0" class="tag">Madera</a>
-			<a aria-label="Filtrar por metal" tabindex="0" class="tag">Metal</a>
-			<a aria-label="Filtrar por plástico" tabindex="0" class="tag">Plástico</a>
-			<a aria-label="Filtrar por collares" tabindex="0" class="tag">Collares</a>
-			<a aria-label="Filtrar por pulseras" tabindex="0" class="tag">Pulseras</a>
-			<a aria-label="Filtrar por escapularios" tabindex="0" class="tag">Escapularios</a>
-			<a aria-label="Filtrar para niño" tabindex="0" class="tag">Niño</a>
-			<a aria-label="Filtrar para adulto" tabindex="0" class="tag">Adulto</a>
-		</div>
-		<div class="">
-			<label for="rango">Presupuesto máximo en euros</label>
-			<input class="w-full" type="range" id="rango" aria-label="Seleccionar presupuesto máximo">
-		</div>
-	</aside>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+				<article tabindex="0" class="card">
+					<img class="fav" src="imagenes/fav.png" alt="Marcar como favorito" role="button" aria-label="Añadir a favoritos">
+					<a href="detalles.html" aria-label="Ver detalles del rosario">
+						<img src="imagenes/r1.png" alt="Imagen de rosario artesanal" class="card-img">
+						<div class="card-text">
+							<h4 class="text-left">Rosario</h4>
+							<p>13,13 €</p>
+							<button class="comprar-button">Comprar</button>
+						</div>
+					</a>
+				</article>
+			</section>
+		</main>
+		<aside aria-label="Filtros de productos" class="order-1  bg-white/80 rounded-2xl m-2 p-8">
+			<div class=" flex gap-2">
+				<img class="icon" id="iconoFiltros" src="imagenes/filters.png" alt="Icono de filtros">
+				Filtros
+			</div>
+			<div class="flex flex-wrap" aria-label="Opciones de filtro" >
+				<a aria-label="Filtrar por madera" tabindex="0" class="tag">Madera</a>
+				<a aria-label="Filtrar por metal" tabindex="0" class="tag">Metal</a>
+				<a aria-label="Filtrar por plástico" tabindex="0" class="tag">Plástico</a>
+				<a aria-label="Filtrar por collares" tabindex="0" class="tag">Collares</a>
+				<a aria-label="Filtrar por pulseras" tabindex="0" class="tag">Pulseras</a>
+				<a aria-label="Filtrar por escapularios" tabindex="0" class="tag">Escapularios</a>
+				<a aria-label="Filtrar para niño" tabindex="0" class="tag">Niño</a>
+				<a aria-label="Filtrar para adulto" tabindex="0" class="tag">Adulto</a>
+			</div>
+			<div class="">
+				<label for="rango">Presupuesto máximo en euros</label>
+				<input class="w-full" type="range" id="rango" aria-label="Seleccionar presupuesto máximo">
+			</div>
+		</aside>
 	</div>
 	<footer aria-label="Pie de página" >
 		<div id="información" class="flex w-full justify-around p-8 bg-zinc-500">
