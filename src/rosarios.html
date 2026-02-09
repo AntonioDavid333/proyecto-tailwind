@@ -15,10 +15,10 @@
 				</a>
 			</div>
 			<div id="options" aria-label="Categorías de productos" class="nav-options">
-				<a aria-label="Ver productos nuevos" accesskey="2" tabindex="0">Nuevo</a>
-				<a aria-label="Ver rosarios" accesskey="3" tabindex="0">Rosarios</a>
-				<a aria-label="Ver pulseras" accesskey="4" tabindex="0">Pulseras</a>
-				<a aria-label="Ver escapularios" accesskey="5" tabindex="0">Escapularios</a>
+				<a aria-label="Ver productos nuevos" accesskey="2" tabindex="0" class="link">Nuevo</a>
+				<a aria-label="Ver rosarios" accesskey="3" tabindex="0" class="text-amber-200 font-bold link">Rosarios</a>
+				<a aria-label="Ver pulseras" accesskey="4" tabindex="0" class="link">Pulseras</a>
+				<a aria-label="Ver escapularios" accesskey="5" tabindex="0" class="link">Escapularios</a>
 			</div>
 			<div id="log" aria-label="Opciones de usuario" class="log">
 				<img src="imagenes/buscar.png" alt="Icono de búsqueda" aria-hidden="true" class="icon">
@@ -177,12 +177,12 @@
 				</article>
 			</section>
 		</main>
-		<aside aria-label="Filtros de productos" class="order-1  bg-white/80 rounded-2xl m-2 p-8">
-			<div class=" flex gap-2">
-				<img class="icon" id="iconoFiltros" src="imagenes/filters.png" alt="Icono de filtros">
-				Filtros
+		<aside aria-label="Filtros de productos" class="order-1 content-start items-start md:items-center md:justify-center md:bg-white/80 rounded-full  md:rounded-2xl m-2 md:p-8 md:w-1/4">
+			<div class=" md:flex md:gap-2">
+				<img class="w-12 bg-white/80 rounded-full p-2 object-cover md:icon md:bg-white/0 active:scale-95" id="iconoFiltros" src="imagenes/filters.png" alt="Icono de filtros">
+				<span class="hidden md:block">Filtros</span>
 			</div>
-			<div class="flex flex-wrap" aria-label="Opciones de filtro" >
+			<div class="hidden  md:flex md:flex-wrap" aria-label="Opciones de filtro" >
 				<a aria-label="Filtrar por madera" tabindex="0" class="tag">Madera</a>
 				<a aria-label="Filtrar por metal" tabindex="0" class="tag">Metal</a>
 				<a aria-label="Filtrar por plástico" tabindex="0" class="tag">Plástico</a>
@@ -192,14 +192,14 @@
 				<a aria-label="Filtrar para niño" tabindex="0" class="tag">Niño</a>
 				<a aria-label="Filtrar para adulto" tabindex="0" class="tag">Adulto</a>
 			</div>
-			<div class="">
+			<div class="hidden  md:block">
 				<label for="rango">Presupuesto máximo en euros</label>
 				<input class="w-full" type="range" id="rango" aria-label="Seleccionar presupuesto máximo">
 			</div>
 		</aside>
 	</div>
 	<footer aria-label="Pie de página" >
-		<div id="información" class="flex w-full justify-around p-8 bg-zinc-500">
+		<div id="información" class="flex flex-col gap-4 w-full justify-around p-8 bg-zinc-500">
 			<div>
 				<h3>Ayuda</h3>
 				<ul>
