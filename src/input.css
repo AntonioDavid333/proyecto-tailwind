@@ -7,10 +7,10 @@
     @apply w-screen bg-slate-700 text-white flex justify-between items-center shadow-black shadow-xl
 }
 .icon{
-    @apply w-6
+    @apply w-6 active:scale-95  hover:cursor-pointer
 }
 .link{
-    @apply hover:scale-105 hover:cursor-pointer
+    @apply hover:scale-105 hover:cursor-pointer active:text-amber-200
 }
 .logo{
     @apply w-30 ml-8 
